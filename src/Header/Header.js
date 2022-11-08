@@ -28,8 +28,10 @@ const Header = () => {
                     <li><Link className='text-white' to="/blog">Blog</Link></li>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn"><Link to="/login">Log In</Link></a>
+            <div className="navbar-end mr-3 text-white">
+                <ul>
+                    <li><Link to="/login">Log In</Link></li>
+                </ul>
             </div>
         </div>
     );
