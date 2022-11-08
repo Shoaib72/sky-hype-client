@@ -18,13 +18,13 @@ const Header = () => {
                     </ul>
                 </div>
                 <img className='h-20 w-20' src={jump} alt="" />
-                <Link to="/" className="normal-case text-4xl text-white">SKYHYPE</Link>
+                <Link to="/home" className="normal-case text-4xl text-white">SKYHYPE</Link>
 
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
                     <li> <Link className='text-white' to="/home">Home</Link> </li>
-                    <li><Link className='text-white' to="/about-us">About Us</Link></li>
+                    <li><Link className='text-white' to="/about-us">About</Link></li>
                     <li><Link className='text-white' to="/blog">Blog</Link></li>
                 </ul>
             </div>
