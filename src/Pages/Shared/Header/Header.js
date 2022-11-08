@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import jump from './../assets/jump.ico'
+import jump from './../../../assets/jump.ico'
 
 
 const Header = () => {
     return (
-        <div className="navbar bg-slate-700">
+        <div className="navbar bg-slate-700 mb-5 rounded-lg">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -18,7 +18,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <img className='h-20 w-20' src={jump} alt="" />
-                <Link to="/" className="btn btn-ghost normal-case text-4xl text-white">SKYHYPE</Link>
+                <Link to="/" className="normal-case text-4xl text-white">SKYHYPE</Link>
 
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -30,7 +30,7 @@ const Header = () => {
             </div>
             <div className="navbar-end mr-3 text-white">
                 <ul>
-                    <li><Link to="/login">Log In</Link></li>
+                    <li><Link to="/login"><button className="btn btn-outline btn-info">Login</button></Link></li>
                 </ul>
             </div>
         </div>

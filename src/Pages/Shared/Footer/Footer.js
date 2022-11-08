@@ -1,9 +1,9 @@
 import React from 'react';
-import jump from './../assets/jump.ico'
+import jump from './../../../assets/jump.ico'
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center p-10 bg-slate-700 text-primary-content mx-auto">
+        <footer className="footer footer-center p-10 bg-slate-700 text-primary-content mx-auto rounded-lg">
             <div>
                 <img className='h-20 w-20' src={jump} alt="" />
                 <p className="font-bold">
