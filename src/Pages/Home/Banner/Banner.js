@@ -8,15 +8,15 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div className="carousel w-full mb-5 rounded-lg h-1/3">
+        <div className="carousel w-full mb-5 rounded-lg h-[500px]">
             <div id="slide1" className="carousel-item relative w-full">
                 <div className='carousel-img'>
-                    <img src={dive1} className="w-full h-full" alt="" />
+                    <img src={dive1} className="w-[1300px] h-full" alt="" />
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 top-1/4">
                     <h1 className='md:text-5xl text-3xl text-white font-bold'>Fly With Me</h1>
                 </div>
-                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4">
+                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
                         in my basket. You can have an amazing experience diving with me!
                     </p>
@@ -31,12 +31,12 @@ const Banner = () => {
             </div>
             <div id="slide2" className="carousel-item relative w-full">
                 <div className='carousel-img'>
-                    <img src={dive2} className="w-full h-full" alt="" />
+                    <img src={dive2} className="w-[1300px] h-full" alt="" />
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 top-1/4">
                     <h1 className='md:text-5xl text-3xl text-white font-bold'>Fly With Me</h1>
                 </div>
-                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4">
+                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
                         in my basket. You can have an amazing experience diving with me!
                     </p>
@@ -51,12 +51,12 @@ const Banner = () => {
             </div>
             <div id="slide3" className="carousel-item relative w-full">
                 <div className='carousel-img'>
-                    <img src={dive3} className="w-full h-full" alt="" />
+                    <img src={dive3} className="w-[1300px] h-full" alt="" />
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 top-1/4">
                     <h1 className='md:text-5xl text-3xl text-white font-bold'>Fly With Me</h1>
                 </div>
-                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4">
+                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
                         in my basket. You can have an amazing experience diving with me!
                     </p>
@@ -71,12 +71,12 @@ const Banner = () => {
             </div>
             <div id="slide4" className="carousel-item relative w-full">
                 <div className='carousel-img'>
-                    <img src={dive4} className="w-full h-full" alt="" />
+                    <img src={dive4} className="w-[1300px] h-full" alt="" />
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 top-1/4">
                     <h1 className='md:text-5xl text-3xl text-white font-bold'>Fly With Me</h1>
                 </div>
-                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4">
+                <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
                         in my basket. You can have an amazing experience diving with me!
                     </p>
