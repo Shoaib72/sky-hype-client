@@ -7,7 +7,7 @@ import { GoogleAuthProvider } from 'firebase/auth'
 
 const Login = () => {
     const provider = new GoogleAuthProvider();
-    const { signIn, setError, error, googleLogin, setUser } = useContext(AuthContext);
+    const { signIn, setError, error, googleLogin, setUser, name } = useContext(AuthContext);
 
     const handleLogIn = (event) => {
         event.preventDefault()
@@ -17,6 +17,8 @@ const Login = () => {
         signIn(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
+                user.displayName = name;
+
                 setUser(user)
                 setError("");
             })

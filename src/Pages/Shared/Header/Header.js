@@ -5,11 +5,12 @@ import jump from './../../../assets/jump.ico'
 
 
 const Header = () => {
-    const { user, logOut, setError } = useContext(AuthContext);
+    const { user, logOut, setError, name, setName } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
             .then(() => {
-                setError("")
+                setError("");
+                setName("");
             }).catch((error) => {
                 setError(error)
             });
@@ -42,7 +43,7 @@ const Header = () => {
                 <ul className='d-flex relative'>
                     {
                         user?.uid ? <li>
-                            <img className='h-20 w-20 mb-2 ml-1 border-2 border-white' src={user.photoURL} alt="Not Available" />
+                            <img className='h-20 w-20 mb-2 ml-1 border-2 border-white text-white' src={user.photoURL} alt={name} />
                             <button onClick={handleLogOut} className="btn btn-outline btn-info">LogOut</button>
                         </li> :
                             <li><Link to="/login"><button className="btn btn-outline btn-info">Login</button></Link></li>
