@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 import jump from './../../../assets/jump.ico'
 
 
 const Header = () => {
+    const { user, logOut, setError } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                setError("")
+            }).catch((error) => {
+                setError(error)
+            });
+    }
     return (
         <div className="navbar bg-slate-700 mb-5 rounded-lg">
             <div className="navbar-start">
@@ -29,8 +39,15 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end mr-3 text-white">
-                <ul>
-                    <li><Link to="/login"><button className="btn btn-outline btn-info">Login</button></Link></li>
+                <ul className='d-flex relative'>
+                    {
+                        user?.uid ? <li>
+                            <img className='h-20 w-20 mb-2 ml-1 border-2 border-white' src={user.photoURL} alt="Not Available" />
+                            <button onClick={handleLogOut} className="btn btn-outline btn-info">LogOut</button>
+                        </li> :
+                            <li><Link to="/login"><button className="btn btn-outline btn-info">Login</button></Link></li>
+                    }
+
                 </ul>
             </div>
         </div>
