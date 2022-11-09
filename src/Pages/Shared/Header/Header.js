@@ -23,9 +23,21 @@ const Header = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-700 rounded-box w-52">
-                        <li><Link className='text-white' to="/home">Home</Link></li>
-                        <li><Link className='text-white' to="/about-us">About Us</Link></li>
-                        <li><Link className='text-white' to="/blog">Blog</Link></li>
+                        {
+                            user?.uid ? <>
+                                <li><Link className='text-white' to="/my-reviews">My Reviews</Link> </li>
+                                <li><Link className='text-white' to="/add-service">Add Services</Link> </li>
+                                <li> <Link className='text-white' to="/home">Home</Link> </li>
+                                <li><Link className='text-white' to="/about-us">About</Link></li>
+                                <li><Link className='text-white' to="/blog">Blog</Link></li>
+
+                            </> :
+                                <>
+                                    <li> <Link className='text-white' to="/home">Home</Link> </li>
+                                    <li><Link className='text-white' to="/about-us">About</Link></li>
+                                    <li><Link className='text-white' to="/blog">Blog</Link></li>
+                                </>
+                        }
                     </ul>
                 </div>
                 <img className='h-20 w-20' src={jump} alt="" />
@@ -34,9 +46,21 @@ const Header = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
-                    <li> <Link className='text-white' to="/home">Home</Link> </li>
-                    <li><Link className='text-white' to="/about-us">About</Link></li>
-                    <li><Link className='text-white' to="/blog">Blog</Link></li>
+                    {
+                        user?.uid ? <>
+                            <li><Link className='text-white' to="/my-reviews">My Reviews</Link> </li>
+                            <li><Link className='text-white' to="/add-service">Add Services</Link> </li>
+                            <li> <Link className='text-white' to="/home">Home</Link> </li>
+                            <li><Link className='text-white' to="/about-us">About</Link></li>
+                            <li><Link className='text-white' to="/blog">Blog</Link></li>
+
+                        </> :
+                            <>
+                                <li> <Link className='text-white' to="/home">Home</Link> </li>
+                                <li><Link className='text-white' to="/about-us">About</Link></li>
+                                <li><Link className='text-white' to="/blog">Blog</Link></li>
+                            </>
+                    }
                 </ul>
             </div>
             <div className="navbar-end mr-3 text-white">

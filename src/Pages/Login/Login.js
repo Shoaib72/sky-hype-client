@@ -7,6 +7,8 @@ import { GoogleAuthProvider } from 'firebase/auth'
 
 const Login = () => {
     const provider = new GoogleAuthProvider();
+
+
     const { signIn, setError, error, googleLogin, setUser, name } = useContext(AuthContext);
 
     const handleLogIn = (event) => {
@@ -21,6 +23,7 @@ const Login = () => {
 
                 setUser(user)
                 setError("");
+
             })
             .catch((error) => {
                 const errorMessage = error.message;
