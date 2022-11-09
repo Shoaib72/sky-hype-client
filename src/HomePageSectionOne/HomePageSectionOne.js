@@ -9,8 +9,8 @@ const HomePageSectionOne = () => {
                 <div>
                     <h1 className="text-5xl font-bold text-white">Don't You wanna<br />
                         feel the horizon?</h1>
-                    <p className="py-3 text-white">Provident cupiditate voluptatem <br />et in. Quaerat fugiat ut assumenda excepturi<br />
-                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <p className="py-3 text-white">We dont forget about your<br />safety. We provide our best safety kits for you.<br />
+                        A jump from 10,000 feet can boost your adrenaline to the peak!</p>
                 </div>
             </div>
         </div>
