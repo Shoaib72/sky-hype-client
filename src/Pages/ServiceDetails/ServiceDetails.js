@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import ReviewSection from '../../ReviewSection/ReviewSection';
 
 const ServiceDetails = () => {
-
+    const { user, setUser, } = useContext(AuthContext)
+    console.log(user);
     const { service, reviews } = useLoaderData();
     const { serviceImage, serviceName, serviceDescription, serviceRating, servicePrice, jumpHeight } = service;
     return (
@@ -19,6 +21,9 @@ const ServiceDetails = () => {
                     <p><span className='text-lg font-bold'>Jump Height: </span>{jumpHeight}</p>
 
                 </div>
+            </div>
+            <div>
+
             </div>
             <div>
                 <h2 className='text-center font-bold mt-5 mb-5 text-3xl'>Reviews</h2>
