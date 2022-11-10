@@ -28,13 +28,13 @@ const Header = () => {
                                 <li><Link className='text-white' to="/my-reviews">My Reviews</Link> </li>
                                 <li><Link className='text-white' to="/add-service">Add Services</Link> </li>
                                 <li> <Link className='text-white' to="/home">Home</Link> </li>
-                                <li><Link className='text-white' to="/about-us">About</Link></li>
+
                                 <li><Link className='text-white' to="/blog">Blog</Link></li>
 
                             </> :
                                 <>
                                     <li> <Link className='text-white' to="/home">Home</Link> </li>
-                                    <li><Link className='text-white' to="/about-us">About</Link></li>
+
                                     <li><Link className='text-white' to="/blog">Blog</Link></li>
                                 </>
                         }
@@ -51,13 +51,13 @@ const Header = () => {
                             <li><Link className='text-white' to="/my-reviews">My Reviews</Link> </li>
                             <li><Link className='text-white' to="/add-service">Add Services</Link> </li>
                             <li> <Link className='text-white' to="/home">Home</Link> </li>
-                            <li><Link className='text-white' to="/about-us">About</Link></li>
+
                             <li><Link className='text-white' to="/blog">Blog</Link></li>
 
                         </> :
                             <>
                                 <li> <Link className='text-white' to="/home">Home</Link> </li>
-                                <li><Link className='text-white' to="/about-us">About</Link></li>
+
                                 <li><Link className='text-white' to="/blog">Blog</Link></li>
                             </>
                     }
