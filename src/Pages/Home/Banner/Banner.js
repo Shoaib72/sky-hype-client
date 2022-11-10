@@ -18,7 +18,7 @@ const Banner = () => {
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
-                        in my basket. You can have an amazing experience diving with me!
+                        in my basket. You can have an amazing experience jumping with me!
                     </p>
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/2 top-3/4">
@@ -38,7 +38,7 @@ const Banner = () => {
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
-                        in my basket. You can have an amazing experience diving with me!
+                        in my basket. You can have an amazing experience jumping with me!
                     </p>
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/2 top-3/4">
@@ -58,7 +58,7 @@ const Banner = () => {
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
-                        in my basket. You can have an amazing experience diving with me!
+                        in my basket. You can have an amazing experience jumping with me!
                     </p>
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/2 top-3/4">
@@ -78,7 +78,7 @@ const Banner = () => {
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/3 top-2/4 md:mt-4">
                     <p className='text-white font-semibold'>Come fly with me! I have almost 10,000 successful jumps <br />
-                        in my basket. You can have an amazing experience diving with me!
+                        in my basket. You can have an amazing experience jumping with me!
                     </p>
                 </div>
                 <div className="absolute flex justify-center transform -translate-y-1/2 left-24 md:top-1/2 top-3/4">
