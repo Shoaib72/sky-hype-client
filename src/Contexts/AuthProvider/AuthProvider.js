@@ -14,21 +14,38 @@ const AuthProvider = ({ children }) => {
 
 
     const createUser = (email, password) => {
+        setLoading(true)
+        if (loading) {
+            return <button className="btn loading">loading</button>;
+        }
         return createUserWithEmailAndPassword(auth, email, password);
     };
     const signIn = (email, password) => {
+        setLoading(true)
+        if (loading) {
+            return <button className="btn loading">loading</button>;
+        }
         return signInWithEmailAndPassword(auth, email, password)
     };
     const googleLogin = (provider) => {
+        setLoading(true)
+        if (loading) {
+            return <button className="btn loading">loading</button>;
+        }
         return signInWithPopup(auth, provider);
     };
     const logOut = () => {
+        setLoading(true)
+        if (loading) {
+            return <button className="btn loading">loading</button>;
+        }
         return signOut(auth);
     }
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             console.log(currentUser);
             setUser(currentUser);
+            setLoading(false)
         });
         return () => {
             return unsubscribe();

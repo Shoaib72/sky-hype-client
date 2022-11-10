@@ -6,6 +6,7 @@ import jump from './../../../assets/jump.ico'
 
 const Header = () => {
     const { user, logOut, setError, name, setName } = useContext(AuthContext);
+
     const handleLogOut = () => {
         logOut()
             .then(() => {

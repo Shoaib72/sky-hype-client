@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
+
 import useTitle from '../../Hooks/useTitle';
 import SingleServiceCard from '../../SigleServiceCard/SingleServiceCard';
 
 const Services = () => {
     const [services, setServices] = useState([]);
-    useTitle('Services')
+
+    useTitle('Services');
     useEffect(() => {
+
         fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
+
     }, []);
     return (
         <div>
