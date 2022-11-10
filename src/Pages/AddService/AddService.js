@@ -3,9 +3,9 @@ import swal from 'sweetalert';
 
 const AddService = () => {
     const [service, setService] = useState({});
+
     const handleForm = (event) => {
         event.preventDefault();
-        console.log(service)
         fetch('http://localhost:5000/services', {
             method: 'POST',
             headers: {
