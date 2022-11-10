@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const HomePageService = ({ service }) => {
@@ -12,7 +13,7 @@ const HomePageService = ({ service }) => {
                 <p><span className='text-lg font-bold'>Rating: </span>{serviceRating}</p>
                 <p><span className='text-lg font-bold'>Price: </span>{servicePrice}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-outline btn-info">View Details</button>
+                    <Link to={`/services/${service._id}`}><button className="btn btn-outline btn-info">View Details</button></Link>
                 </div>
             </div>
         </div>
