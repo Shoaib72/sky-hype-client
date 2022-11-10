@@ -1,10 +1,9 @@
 import React from 'react';
 
-
-const HomePageService = ({ service }) => {
+const SingleServiceCard = ({ service }) => {
     const { serviceName, serviceImage, servicePrice, serviceDescription, serviceRating } = service;
     return (
-        <div className="card w-96 glass bg-slate-500">
+        <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img src={serviceImage} alt="" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{serviceName}</h2>
@@ -19,4 +18,4 @@ const HomePageService = ({ service }) => {
     );
 };
 
-export default HomePageService;
+export default SingleServiceCard;

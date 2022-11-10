@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import HomePageSectionOne from '../../HomePageSectionOne/HomePageSectionOne';
 import HomePageSectionTwo from '../../HomePageSectionTwo/HomePageSectionTwo';
 import HomePageService from '../../HomePageService/HomePageService';
@@ -21,7 +22,7 @@ const Home = () => {
                     services.map(service => <HomePageService key={service.serviceId} service={service}></HomePageService>)
                 }
             </div>
-            <div className='justify-items-center'><button className="btn btn-outline btn-info mt-7 mb-7">Load More</button></div>
+            <Link to="/services"><button className="btn btn-outline btn-info mt-7 mb-7 lg:ml-[590px] ml-[180px]">Load More...</button></Link>
             <HomePageSectionOne></HomePageSectionOne>
             <HomePageSectionTwo></HomePageSectionTwo>
         </div>
