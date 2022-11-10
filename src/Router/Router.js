@@ -10,12 +10,14 @@ import AddService from './../Pages/AddService/AddService'
 import Services from "../Pages/Services/Services";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./PrivateRoute";
+import ErrorRoute from './../ErrorRoute/ErrorRoute'
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorRoute></ErrorRoute>,
         children: [
             {
                 path: '/',
