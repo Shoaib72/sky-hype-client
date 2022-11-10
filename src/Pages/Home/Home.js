@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import HomePageSectionOne from '../../HomePageSectionOne/HomePageSectionOne';
 import HomePageSectionTwo from '../../HomePageSectionTwo/HomePageSectionTwo';
 import HomePageService from '../../HomePageService/HomePageService';
+import useTitle from '../../Hooks/useTitle';
 import Banner from './Banner/Banner';
 
 
 
 const Home = () => {
     const [services, setServices] = useState([]);
+    useTitle('Home');
     useEffect(() => {
         fetch('http://localhost:5000/home')
             .then(res => res.json())

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
+import useTitle from '../../Hooks/useTitle';
 
 const AddService = () => {
     const [service, setService] = useState({});
-
+    useTitle('Add Service');
     const handleForm = (event) => {
         event.preventDefault();
         fetch('http://localhost:5000/services', {
