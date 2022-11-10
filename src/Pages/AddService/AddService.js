@@ -7,7 +7,7 @@ const AddService = () => {
     useTitle('Add Service');
     const handleForm = (event) => {
         event.preventDefault();
-        fetch('http://localhost:5000/services', {
+        fetch('https://sky-hype-server.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

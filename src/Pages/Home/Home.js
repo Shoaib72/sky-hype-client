@@ -12,7 +12,7 @@ const Home = () => {
     const [services, setServices] = useState([]);
     useTitle('Home');
     useEffect(() => {
-        fetch('http://localhost:5000/home')
+        fetch('https://sky-hype-server.vercel.app/home')
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);

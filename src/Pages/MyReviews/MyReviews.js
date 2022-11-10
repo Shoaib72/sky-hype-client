@@ -6,7 +6,7 @@ const MyReviews = () => {
     const [reviews, setReviews] = useState([])
     useTitle('My Reviews')
     useEffect(() => {
-        fetch('http://localhost:5000/my-reviews')
+        fetch('https://sky-hype-server.vercel.app/my-reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

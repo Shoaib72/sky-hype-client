@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     const { serviceImage, serviceName, serviceDescription, serviceRating, servicePrice, jumpHeight } = service;
     const handleReviewForm = event => {
         event.preventDefault();
-        fetch('http://localhost:5000/services/:id', {
+        fetch('https://sky-hype-server.vercel.app/services/:id', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
